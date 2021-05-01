@@ -30,5 +30,4 @@ public class BaseDAO {
 		Connection conn = db.getConnection();
 		System.out.println(conn);
 	}
-
 }
