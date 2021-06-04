@@ -17,7 +17,7 @@ public class MyApplication extends Application {
 	@Override
 	public Map<String, Object> getProperties() {
 		Map<String, Object> properties = new HashMap<>();
-		// Configura o pacote para fazer scan das classes com anotações REST.
+		// Configura o pacote para fazer scan das classes com anotaÃ§Ãµes REST.
 		properties
 				.put("jersey.config.server.provider.packages", "br.com.livro");
 		return properties;

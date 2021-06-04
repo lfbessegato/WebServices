@@ -9,7 +9,9 @@
 	<url>http://maven.apache.org</url>
 	<properties>
 		<spring.version>4.1.6.RELEASE</spring.version>
+		<hibernate.version>4.3.10.Final</hibernate.version>
 	</properties>
+
 	<!-- Dependências -->
 	<dependencies>
 		<!-- JUnit -->
@@ -45,6 +47,7 @@
 			<artifactId>gson</artifactId>
 			<version>2.3.1</version>
 		</dependency>
+		
 		<!-- Jersey-Spring -->
 		<dependency>
 			<groupId>org.glassfish.jersey.ext</groupId>
@@ -73,7 +76,7 @@
 				</exclusion>
 				<exclusion>
 					<groupId>org.springframework</groupId>
-					<artifactId>string-tx</artifactId>
+					<artifactId>spring-tx</artifactId>
 				</exclusion>
 			</exclusions>
 		</dependency>
@@ -88,7 +91,37 @@
 			<artifactId>spring-orm</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
+		
+		<!-- Hibernate -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-ehcache</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>1.4</version>
+		</dependency>
+		<!-- Hibernate AspectJ -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+			<version>1.6.11</version>
+		</dependency>
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>1.6.11</version>
+		</dependency>
+		
 	</dependencies>
+
 	<build>
 		<finalName>carros</finalName>
 		<plugins>
